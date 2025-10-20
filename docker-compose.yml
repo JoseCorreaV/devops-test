@@ -11,7 +11,7 @@ services:
     image: "redis:alpine"
     ports:
       - "6379:6379"
-    networks:
+    volumes:
       - redis_data:/data
 
 volumes:
